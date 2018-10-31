@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: 'Assistant', "Times New Roman", sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+p{
+    
+}
+a{
+    
+}
+ul{
+    
+}
+ol{
+    
+}
+li{
+    
+}
+img{
+    width: 25%;
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding:1rem 2rem;
+    color: #57585c;
+    background-image: url(1800.jpg);
+    font-family: 'Assistant', "Times New Roman", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+header > h1{
+    
+    
+}
+header > h2{
+    
+}
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+    color: #6b6b6c;
+   
+    
+    
+}
+nav > a,
+nav > a:visited
+nav > a:link{
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    
+}
+
+.mainnav{
+    display: flex;
+    justify-content: space-around;
+    background:#737677 ;
+    font-size: 1.5rem;
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding:1rem 2rem;
+    background: #efefee;
+    
+    
+}
+section{
+    
+}
+section p{
+    
+    
+}
+section p img{
+display: block;
+}
+.primary{
+    display: flex;
+    background-color: #caced1;
+    font-size: 1.3rem;
+   
+}
+.primary h1,h2,h3{
+    color: red;
+}
+.primary img{
+    display: block;
+    width: 100%;
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    padding:1rem 2rem;
+    
+    
+   
+}
+
+.foot{
+    display:grid;
+}
+.foot dl{
+    
+}
+.foot dt{
+    
+}
+.foot dd{
+    
+}
+.foot dd a,
+.foot dd a:visited{
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    
+}
+
+
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+
+@media(max-width: 599px){
+    .mast{
+        max-width: 100%;
+        background-color: green;
+        font-size:1.5rem; 
+        text-align: left;
+    }
+    .mainnav{
+        flex-direction: column;
+        font-size: 1rem;
+        background-color: #caced1;
+    }
+    
+    .foot {
+        
+        background: #caced1;
+        color: #6a6d6d;
+    }
+    .primary h1,h2,h3{
+        color: #333132;
+    }
+ .primary img{
+        width: 100%;
+}
+.primary{
+        background-color: #f7f8f8;
+        max-width: 100%;
+        flex-direction: column;  
+    font-size: .9rem;
+}
+    
+}
+@media(min-width: 600px) and (max-width:999px){
+    .mast{
+        
+        font-family: 'Assistant', "Times New Roman", sans-serif;
+        max-width: 100%;
+        background-color: #3f4042;
+    }
+    nav{
+        color:#3f4042;
+    }
+  .primary{
+        font-family: 'Assistant', "Times New Roman", sans-serif;
+        background-color: #a0a2a3;
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: row;
+        font-size: 1rem;
+    }  
+    
+    .primary h1,h2,h3{
+        color: #3f4042;
+        font-size: 1.2rem;
+    }
+    .mainnav{
+        background-color: #737677;
+    }
+    .foot{
+        background-color: #737677;
+    }
+}
+
+@media (min-width: 1000px){
+    .primary img{
+        width: 100%;
+    }
+    .primary h1,h2,h3{
+        color: blue;
+    }
+   .primary h1,h2,h3{
+     color: #57585c;
+}
+    .foot {
+        grid-template-columns: 4fr 3fr;
+        background: #c2c3c6;
+        color: #6a6d6d;
+        font-size: 1.5rem;
+    }
+    .foot nav{
+       display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #6a6d6d;
+    } 
+    .mainnav{
+        background-color: #c2c3c6;
+    }
+}
+
+
